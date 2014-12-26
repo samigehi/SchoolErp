@@ -1,0 +1,134 @@
+mysql> show tables from dhstore;
++-------------------+
+| Tables_in_dhstore |
++-------------------+
+| daily_issue       |
+| issue             |
+| purchase          |
+| purchase_order    |
+| stock             |
++-------------------+
+5 rows in set (0.00 sec)
+
+
+
+
+
+
+mysql> show columns from dhstore.issue;
++-------------+---------------+------+-----+---------+----------------+
+| Field       | Type          | Null | Key | Default | Extra          |
++-------------+---------------+------+-----+---------+----------------+
+| id          | int(20)       | NO   | PRI | NULL    | auto_increment |
+| iss_date    | date          | NO   |     | NULL    |                |
+| items       | varchar(100)  | NO   |     | NULL    |                |
+| qty         | decimal(15,3) | NO   |     | NULL    |                |
+| rate        | decimal(15,3) | NO   |     | NULL    |                |
+| items_for   | varchar(100)  | NO   |     | NULL    |                |
+| dhst_remark | varchar(255)  | NO   |     | NULL    |                |
+| iss_time    | time          | NO   |     | NULL    |                |
+| issued_to   | varchar(100)  | NO   |     | NULL    |                |
+| issued_by   | varchar(100)  | NO   |     | NULL    |                |
+| ip_1        | varchar(100)  | NO   |     | NULL    |                |
+| ip_2        | varchar(100)  | NO   |     | NULL    |                |
++-------------+---------------+------+-----+---------+----------------+
+12 rows in set (0.00 sec)
+
+
+
+
+
+mysql> show columns from dhstore.purchase;
++-------------+---------------+------+-----+---------+----------------+
+| Field       | Type          | Null | Key | Default | Extra          |
++-------------+---------------+------+-----+---------+----------------+
+| id          | int(20)       | NO   | PRI | NULL    | auto_increment |
+| pr_date     | date          | NO   |     | NULL    |                |
+| items       | varchar(100)  | NO   |     | NULL    |                |
+| supplier    | varchar(150)  | NO   |     | NULL    |                |
+| bill_date   | date          | NO   |     | NULL    |                |
+| bill_no     | varchar(150)  | NO   |     | NULL    |                |
+| qty         | decimal(15,3) | NO   |     | NULL    |                |
+| dhst_remark | varchar(255)  | NO   |     | NULL    |                |
+| pr_time     | time          | YES  |     | NULL    |                |
+| rate        | decimal(15,3) | NO   |     | NULL    |                |
+| added_by    | varchar(100)  | NO   |     | NULL    |                |
+| ip_1        | varchar(100)  | NO   |     | NULL    |                |
+| ip_2        | varchar(100)  | NO   |     | NULL    |                |
++-------------+---------------+------+-----+---------+----------------+
+13 rows in set (0.00 sec)
+
+
+
+
+
+mysql> show columns from dhstore.daily_issue;
++---------------+---------------+------+-----+---------+----------------+
+| Field         | Type          | Null | Key | Default | Extra          |
++---------------+---------------+------+-----+---------+----------------+
+| id            | int(20)       | NO   | PRI | NULL    | auto_increment |
+| di_date       | date          | NO   |     | NULL    |                |
+| items         | varchar(100)  | NO   |     | NULL    |                |
+| dh_remark     | varchar(255)  | NO   |     | NULL    |                |
+| di_time       | time          | YES  |     | NULL    |                |
+| ofdate        | date          | YES  |     | NULL    |                |
+| qty           | decimal(15,3) | NO   |     | NULL    |                |
+| items_for     | varchar(100)  | NO   |     | NULL    |                |
+| issue_updated | varchar(100)  | NO   |     | NULL    |                |
+| issue_qty     | decimal(5,3)  | NO   |     | NULL    |                |
++---------------+---------------+------+-----+---------+----------------+
+10 rows in set (0.00 sec)
+
+
+
+
+mysql> show columns from dhstore.purchase_order;
++----------------+---------------+------+-----+------------+----------------+
+| Field          | Type          | Null | Key | Default    | Extra          |
++----------------+---------------+------+-----+------------+----------------+
+| id             | int(20)       | NO   | PRI | NULL       | auto_increment |
+| po_date        | date          | NO   |     | NULL       |                |
+| items          | varchar(100)  | NO   |     | NULL       |                |
+| qty            | decimal(15,3) | NO   |     | NULL       |                |
+| dh_remark      | varchar(255)  | NO   |     | NULL       |                |
+| po_time        | time          | YES  |     | NULL       |                |
+| ordered_by     | varchar(100)  | NO   |     | NULL       |                |
+| ordered_status | varchar(100)  | NO   |     | Not Ordred |                |
++----------------+---------------+------+-----+------------+----------------+
+8 rows in set (0.00 sec)
+
+
+
+
+mysql> show columns from dhstore.stock;
++-----------+---------------+------+-----+---------+----------------+
+| Field     | Type          | Null | Key | Default | Extra          |
++-----------+---------------+------+-----+---------+----------------+
+| id        | int(20)       | NO   | PRI | NULL    | auto_increment |
+| items     | varchar(50)   | NO   |     | NULL    |                |
+| qty       | decimal(15,3) | NO   |     | NULL    |                |
+| unit      | varchar(20)   | NO   |     | NULL    |                |
+| rate      | decimal(15,3) | NO   |     | NULL    |                |
+| st_date   | date          | NO   |     | NULL    |                |
+| dh_remark | varchar(15)   | YES  |     | NULL    |                |
+| min_stock | decimal(15,3) | NO   |     | NULL    |                |
++-----------+---------------+------+-----+---------+----------------+
+8 rows in set (0.00 sec)
+
+
+
+mysql> show columns from dhstore.supplier;
++---------------+--------------+------+-----+---------+----------------+
+| Field         | Type         | Null | Key | Default | Extra          |
++---------------+--------------+------+-----+---------+----------------+
+| id            | int(20)      | NO   | PRI | NULL    | auto_increment |
+| supplier_name | varchar(200) | NO   | UNI | NULL    |                |
+| place         | varchar(100) | NO   |     | NULL    |                |
+| supplier_of   | varchar(100) | NO   |     | NULL    |                |
+| contact       | varchar(50)  | YES  |     | NULL    |                |
+| email         | varchar(50)  | YES  |     | NULL    |                |
++---------------+--------------+------+-----+---------+----------------+
+6 rows in set (0.00 sec)
+
+mysql> 
+

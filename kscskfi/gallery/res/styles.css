@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+body {
+	background: #fff;
+	color: #333;
+}
+
+a:link,
+a:visited {
+	color: #4c8033;;
+}
+
+a:active,
+a:hover {
+	color: #6db94a;
+}
+
+.description,
+#index ul.folders li .folder_info p {
+	color: #666;	
+}
+
+#bottom_container {
+	border-top-color: #ababab;	
+}
+
+#index ul.thumbnails li img {
+	background: #111;
+}
+
+#slide #main_img {
+	border-color: #111;
+}
+
+#index ul.folders li img,
+#slide ul.thumbnails li img {
+	border-color: #fff;
+}
+
+
+#index ul.folders li a,
+#slide ul.thumbnails li a {
+	background: #111;
+	color: #4c8033;
+}
+
+#index ul.folders li a:hover,
+#slide ul.thumbnails li a:hover {
+	color: #4c8033;
+}

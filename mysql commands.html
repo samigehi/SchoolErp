@@ -1,0 +1,794 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+<HTML>
+<HEAD>
+	
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+	<TITLE>Mysql database commands</TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice.org 3.2  (Linux)">
+	<META NAME="AUTHOR" CONTENT="Bhau Ghadge">
+	<META NAME="CREATED" CONTENT="20120725;12291600">
+	<META NAME="CHANGEDBY" CONTENT="Bhau Ghadge">
+	<META NAME="CHANGED" CONTENT="20120725;12380200">
+	
+	<STYLE>
+		<!-- 
+		BODY,DIV,TABLE,THEAD,TBODY,TFOOT,TR,TH,TD,P { font-family:"Arial"; font-size:x-small }
+		 -->
+	</STYLE>
+	
+</HEAD>
+
+<BODY TEXT="#000000">
+<TABLE FRAME=VOID CELLSPACING=0 COLS=2 RULES=NONE BORDER=0>
+	<COLGROUP><COL WIDTH=60><COL WIDTH=1073></COLGROUP>
+	<TBODY>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" COLSPAN=2 WIDTH=1133 HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE BGCOLOR="#FF9966"><B><FONT SIZE=4>MYSQL Commands</FONT></B></TD>
+			</TR>
+		<TR>
+			<TD HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE BGCOLOR="#FFCC99" SDVAL="1" SDNUM="3081;"><FONT SIZE=3>1</FONT></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE BGCOLOR="#FFCC99"><B><FONT SIZE=3>Selecting a database:</FONT></B></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>mysql&gt; USE database;</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE BGCOLOR="#FFCC99" SDVAL="2" SDNUM="3081;"><FONT SIZE=3>2</FONT></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE BGCOLOR="#FFCC99"><B><FONT SIZE=3>Listing databases:</FONT></B></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>mysql&gt; SHOW DATABASES;</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE BGCOLOR="#FFCC99" SDVAL="3" SDNUM="3081;"><FONT SIZE=3>3</FONT></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE BGCOLOR="#FFCC99"><B><FONT SIZE=3>Listing tables in a db:</FONT></B></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>mysql&gt; SHOW TABLES;</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE BGCOLOR="#FFCC99" SDVAL="4" SDNUM="3081;"><FONT SIZE=3>4</FONT></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE BGCOLOR="#FFCC99"><B><FONT SIZE=3>Describing the format of a table:</FONT></B></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>mysql&gt; DESCRIBE table;</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE BGCOLOR="#FFCC99" SDVAL="5" SDNUM="3081;"><B><FONT SIZE=3>5</FONT></B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE BGCOLOR="#FFCC99"><B><FONT SIZE=3>Creating a database:</FONT></B></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>mysql&gt; CREATE DATABASE db_name;</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE BGCOLOR="#FFCC99" SDVAL="6" SDNUM="3081;"><B><FONT SIZE=3>6</FONT></B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE BGCOLOR="#FFCC99"><B><FONT SIZE=3>Creating a table:</FONT></B></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>mysql&gt; CREATE TABLE table_name (field1_name TYPE(SIZE), field2_name TYPE(SIZE));</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>Ex: mysql&gt; CREATE TABLE pet (name VARCHAR(20), sex CHAR(1), birth DATE);</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE BGCOLOR="#FFCC99" SDVAL="7" SDNUM="3081;"><B><FONT SIZE=3>7</FONT></B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE BGCOLOR="#FFCC99"><B><FONT SIZE=3>Load tab-delimited data into a table:</FONT></B></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>mysql&gt; LOAD DATA LOCAL INFILE &quot;infile.txt&quot; INTO TABLE table_name;</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>(Use \n for NULL)</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE BGCOLOR="#FFCC99" SDVAL="8" SDNUM="3081;"><B><FONT SIZE=3>8</FONT></B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE BGCOLOR="#FFCC99"><B><FONT SIZE=3>Inserting one row at a time:</FONT></B></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>mysql&gt; INSERT INTO table_name VALUES ('MyName', 'MyOwner', '2002-08-31');</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>(Use NULL for NULL)</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE BGCOLOR="#FFCC99" SDVAL="9" SDNUM="3081;"><B><FONT SIZE=3>9</FONT></B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE BGCOLOR="#FFCC99"><B><FONT SIZE=3>Retrieving information (general):</FONT></B></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>mysql&gt; SELECT from_columns FROM table WHERE conditions;</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>All values: SELECT * FROM table;</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>Some values: SELECT * FROM table WHERE rec_name = &quot;value&quot;;</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>Multiple critera: SELECT * FROM TABLE WHERE rec1 = &quot;value1&quot; AND rec2 = &quot;value2&quot;;</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE BGCOLOR="#FFCC99" SDVAL="10" SDNUM="3081;"><B><FONT SIZE=3>10</FONT></B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE BGCOLOR="#FFCC99"><B><FONT SIZE=3>Reloading a new data set into existing table:</FONT></B></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>mysql&gt; SET AUTOCOMMIT=1; # used for quick recreation of table</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>mysql&gt; DELETE FROM pet;</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>mysql&gt; LOAD DATA LOCAL INFILE &quot;infile.txt&quot; INTO TABLE table;</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE BGCOLOR="#FFCC99" SDVAL="11" SDNUM="3081;"><B><FONT SIZE=3>11</FONT></B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE BGCOLOR="#FFCC99"><B><FONT SIZE=3>Fixing all records with a certain value:</FONT></B></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>mysql&gt; UPDATE table SET column_name = &quot;new_value&quot; WHERE record_name = &quot;value&quot;;</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE BGCOLOR="#FFCC99"><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE BGCOLOR="#FFCC99"><B><FONT SIZE=3>Selecting specific columns:</FONT></B></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>mysql&gt; SELECT column_name FROM table;</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE BGCOLOR="#FFCC99" SDVAL="12" SDNUM="3081;"><B><FONT SIZE=3>12</FONT></B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE BGCOLOR="#FFCC99"><B><FONT SIZE=3>Retrieving unique output records:</FONT></B></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>mysql&gt; SELECT DISTINCT column_name FROM table;</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE BGCOLOR="#FFCC99" SDVAL="13" SDNUM="3081;"><B><FONT SIZE=3>13</FONT></B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE BGCOLOR="#FFCC99"><B><FONT SIZE=3>Sorting:</FONT></B></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>mysql&gt; SELECT col1, col2 FROM table ORDER BY col2;</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>Backwards: SELECT col1, col2 FROM table ORDER BY col2 DESC;</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE BGCOLOR="#FFCC99" SDVAL="14" SDNUM="3081;"><B><FONT SIZE=3>14</FONT></B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE BGCOLOR="#FFCC99"><B><FONT SIZE=3>Date calculations:</FONT></B></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>mysql&gt; SELECT CURRENT_DATE, (YEAR(CURRENT_DATE)-YEAR(date_col)) AS time_diff [FROM table];</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>MONTH(some_date) extracts the month value and DAYOFMONTH() extracts day.</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE BGCOLOR="#FFCC99" SDVAL="15" SDNUM="3081;"><B><FONT SIZE=3>15</FONT></B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE BGCOLOR="#FFCC99"><B><FONT SIZE=3>Pattern Matching:</FONT></B></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>mysql&gt; SELECT * FROM table WHERE rec LIKE &quot;blah%&quot;;</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>(% is wildcard - arbitrary # of chars)</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>Find 5-char values: SELECT * FROM table WHERE rec like &quot;_____&quot;;</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>(_ is any single character)</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE BGCOLOR="#FFCC99" SDVAL="16" SDNUM="3081;"><B><FONT SIZE=3>16</FONT></B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE BGCOLOR="#FFCC99"><B><FONT SIZE=3>Extended Regular Expression Matching:</FONT></B></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>mysql&gt; SELECT * FROM table WHERE rec RLIKE &quot;^b$&quot;;</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>(. for char, [...] for char class, * for 0 or more instances</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>^ for beginning, {n} for repeat n times, and $ for end)</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>(RLIKE or REGEXP)</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>To force case-sensitivity, use &quot;REGEXP BINARY&quot;</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE BGCOLOR="#FFCC99" SDVAL="17" SDNUM="3081;"><B><FONT SIZE=3>17</FONT></B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE BGCOLOR="#FFCC99"><B><FONT SIZE=3>Counting Rows:</FONT></B></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>mysql&gt; SELECT COUNT(*) FROM table;</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE BGCOLOR="#FFCC99" SDVAL="18" SDNUM="3081;"><B><FONT SIZE=3>18</FONT></B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE BGCOLOR="#FFCC99"><B><FONT SIZE=3>Grouping with Counting:</FONT></B></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>mysql&gt; SELECT owner, COUNT(*) FROM table GROUP BY owner;</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>(GROUP BY groups together all records for each 'owner')</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE BGCOLOR="#FFCC99" SDVAL="19" SDNUM="3081;"><B><FONT SIZE=3>19</FONT></B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE BGCOLOR="#FFCC99"><B><FONT SIZE=3>Selecting from multiple tables:</FONT></B></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>(Example)</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>mysql&gt; SELECT pet.name, comment FROM pet, event WHERE pet.name = event.name;</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>(You can join a table to itself to compare by using 'AS')</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE BGCOLOR="#FFCC99" SDVAL="20" SDNUM="3081;"><B><FONT SIZE=3>20</FONT></B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE BGCOLOR="#FFCC99"><B><FONT SIZE=3>Currently selected database:</FONT></B></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>mysql&gt; SELECT DATABASE();</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE BGCOLOR="#FFCC99" SDVAL="21" SDNUM="3081;"><B><FONT SIZE=3>21</FONT></B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE BGCOLOR="#FFCC99"><B><FONT SIZE=3>Maximum value:</FONT></B></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>mysql&gt; SELECT MAX(col_name) AS label FROM table;</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE BGCOLOR="#FFCC99" SDVAL="22" SDNUM="3081;"><B><FONT SIZE=3>22</FONT></B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE BGCOLOR="#FFCC99"><B><FONT SIZE=3>Auto-incrementing rows:</FONT></B></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>mysql&gt; CREATE TABLE table (number INT NOT NULL AUTO_INCREMENT, name CHAR(10) NOT NULL);</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>mysql&gt; INSERT INTO table (name) VALUES (&quot;tom&quot;),(&quot;dick&quot;),(&quot;harry&quot;);</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE BGCOLOR="#FFCC99" SDVAL="23" SDNUM="3081;"><B><FONT SIZE=3>23</FONT></B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE BGCOLOR="#FFCC99"><B><FONT SIZE=3>Adding a column to an already-created table:</FONT></B></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>mysql&gt; ALTER TABLE tbl ADD COLUMN [column_create syntax] AFTER col_name;</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE BGCOLOR="#FFCC99" SDVAL="24" SDNUM="3081;"><B><FONT SIZE=3>24</FONT></B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE BGCOLOR="#FFCC99"><B><FONT SIZE=3>Removing a column:</FONT></B></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>mysql&gt; ALTER TABLE tbl DROP COLUMN col;</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>(Full <A HREF="http://www.mysql.com/doc/en/ALTER_TABLE.html">ALTER TABLE</A> syntax available at mysql.com.)</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE BGCOLOR="#FFCC99" SDVAL="25" SDNUM="3081;"><B><FONT SIZE=3>25</FONT></B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE BGCOLOR="#FFCC99"><B><FONT SIZE=3>Batch mode (feeding in a script):</FONT></B></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3># mysql -u user -p &lt; batch_file</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>(Use -t for nice table layout and -vvv for command echoing.)</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>Alternatively: mysql&gt; source batch_file;</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE BGCOLOR="#FFCC99" SDVAL="26" SDNUM="3081;"><B><FONT SIZE=3>26</FONT></B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE BGCOLOR="#FFCC99"><B><FONT SIZE=3>Backing up a database with mysqldump:</FONT></B></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3># mysqldump --opt -u username -p database &gt; database_backup.sql</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>(Use 'mysqldump --opt --all-databases &gt; all_backup.sql' to backup everything.)</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>(More info at <A HREF="http://www.mysql.com/doc/en/mysqldump.html">MySQL's docs</A>.)</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE BGCOLOR="#FFCC99" SDVAL="27" SDNUM="3081;"><B><FONT SIZE=3>27</FONT></B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE BGCOLOR="#FFCC99"><B><FONT SIZE=3>Show Databases</FONT></B></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>show databases;</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE BGCOLOR="#FFCC99" SDVAL="28" SDNUM="3081;"><B><FONT SIZE=3>28</FONT></B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE BGCOLOR="#FFCC99"><B><FONT SIZE=3>See database Tables</FONT></B></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>show tables from std_master;</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE BGCOLOR="#FFCC99" SDVAL="29" SDNUM="3081;"><B><FONT SIZE=3>29</FONT></B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE BGCOLOR="#FFCC99"><B><FONT SIZE=3>Delete database</FONT></B></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3> DROP DATABASE medical;</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE BGCOLOR="#FFCC99" SDVAL="30" SDNUM="3081;"><B><FONT SIZE=3>30</FONT></B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE BGCOLOR="#FFCC99"><B><FONT SIZE=3>Delete tables from the database</FONT></B></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>drop table if exists std_master.name;</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE BGCOLOR="#FFCC99" SDVAL="31" SDNUM="3081;"><B><FONT SIZE=3>31</FONT></B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE BGCOLOR="#FFCC99"><B><FONT SIZE=3>Delete all records from the database</FONT></B></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3> delete From std_master.maint;</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE BGCOLOR="#FFCC99" SDVAL="32" SDNUM="3081;"><B><FONT SIZE=3>32</FONT></B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE BGCOLOR="#FFCC99"><B><FONT SIZE=3>Reset auto increment to 1</FONT></B></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>ALTER TABLE std_master.maint AUTO_INCREMENT = 1;</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE BGCOLOR="#FFCC99" SDVAL="33" SDNUM="3081;"><B><FONT SIZE=3>33</FONT></B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE BGCOLOR="#FFCC99"><B><FONT SIZE=3>delete coloumns from the table</FONT></B></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>alter table std_master.students drop column `SrNo.`; </FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE BGCOLOR="#FFCC99" SDVAL="34" SDNUM="3081;"><B><FONT SIZE=3>34</FONT></B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE BGCOLOR="#FFCC99"><B><FONT SIZE=3>Import sql file to database</FONT></B></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>mysql -u root -p -h localhost std_master &lt; std.sql</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE BGCOLOR="#FFCC99" SDVAL="35" SDNUM="3081;"><B><FONT SIZE=3>35</FONT></B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE BGCOLOR="#FFCC99"><B><FONT SIZE=3>Export sql file.</FONT></B></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>mysqldump -u root -p -h localhost std_master &gt; new.sql</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE BGCOLOR="#FFCC99" SDVAL="36" SDNUM="3081;"><B><FONT SIZE=3>36</FONT></B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE BGCOLOR="#FFCC99"><B><FONT SIZE=3>Selest database and tables std_master.name;</FONT></B></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>SELECT * From std_master.name;</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE BGCOLOR="#FFCC99" SDVAL="37" SDNUM="3081;"><B><FONT SIZE=3>37</FONT></B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE BGCOLOR="#FFCC99"><B><FONT SIZE=3>Delete row statement for delete entry</FONT></B></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>delete From std_master.name where name='Bhau';</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE BGCOLOR="#FFCC99" SDVAL="38" SDNUM="3081;"><B><FONT SIZE=3>38</FONT></B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE BGCOLOR="#FFCC99"><B><FONT SIZE=3>Change date format</FONT></B></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>SELECT DATE_FORMAT(CURDATE(), '%d/%m/%Y');</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE BGCOLOR="#FFCC99" SDVAL="39" SDNUM="3081;"><B><FONT SIZE=3>39</FONT></B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE BGCOLOR="#FFCC99"><B><FONT SIZE=3>Show columns</FONT></B></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>show columns from std_master.name;</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE BGCOLOR="#FFCC99" SDVAL="40" SDNUM="3081;"><B><FONT SIZE=3>40</FONT></B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE BGCOLOR="#FFCC99"><B><FONT SIZE=3>Get selected fields from a table</FONT></B></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>select name, Sex, House from std_master.name;</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE BGCOLOR="#FFCC99" SDVAL="41" SDNUM="3081;"><B><FONT SIZE=3>41</FONT></B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE BGCOLOR="#FFCC99"><B><FONT SIZE=3>Add primary key to existing table</FONT></B></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>alter table std_master.name add primary key (`Sr. No.`);</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE BGCOLOR="#FFCC99" SDVAL="42" SDNUM="3081;"><B><FONT SIZE=3>42</FONT></B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE BGCOLOR="#FFCC99"><B><FONT SIZE=3>Drop columns from table</FONT></B></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>mysql&gt; alter table std_master.name drop `Sr. No.`;</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE BGCOLOR="#FFCC99" SDVAL="43" SDNUM="3081;"><B><FONT SIZE=3>43</FONT></B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE BGCOLOR="#FFCC99"><B><FONT SIZE=3>Add date type columns to table </FONT></B></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>alter table std_master.name add column DOA DATE;</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE BGCOLOR="#FFCC99" SDVAL="44" SDNUM="3081;"><B><FONT SIZE=3>44</FONT></B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE BGCOLOR="#FFCC99"><B><FONT SIZE=3>Select version</FONT></B></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>select version();</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE BGCOLOR="#FFCC99" SDVAL="45" SDNUM="3081;"><B><FONT SIZE=3>45</FONT></B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE BGCOLOR="#FFCC99"><B><FONT SIZE=3>This example will search through your table for matching words.</FONT></B></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>SELECT * FROM table_name WHERE col_A_name RLIKE ('search_termA') AND col_B_name RLIKE ('search_termB') ;</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE BGCOLOR="#FFCC99" SDVAL="46" SDNUM="3081;"><B><FONT SIZE=3>46</FONT></B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE BGCOLOR="#FFCC99"><B><FONT SIZE=3>Will remove rows that match the search data defined in the WHERE section</FONT></B></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>DELETE FROM table_name WHERE column_name='search_data';</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE BGCOLOR="#FFCC99" SDVAL="47" SDNUM="3081;"><B><FONT SIZE=3>47</FONT></B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE BGCOLOR="#FFCC99"><B><FONT SIZE=3>Will remove rows that match the search data defined in the WHERE section</FONT></B></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>DELETE FROM table_name WHERE column_name IN ('search_data_A', 'search_data_B');</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE BGCOLOR="#FFCC99" SDVAL="48" SDNUM="3081;"><B><FONT SIZE=3>48</FONT></B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE BGCOLOR="#FFCC99"><B><FONT SIZE=3>Replaces items in a row. </FONT></B></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>REPLACE INTO table_name ( `col_A`, `col_B`) VALUES ( `col A data`, `col B data`) ; </FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE BGCOLOR="#FFCC99" SDVAL="49" SDNUM="3081;"><B><FONT SIZE=3>49</FONT></B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE BGCOLOR="#FFCC99"><B><FONT SIZE=3>finishdate timestamp</FONT></B></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>alter table std_master.maint add column finishdate TIMESTAMP;</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE BGCOLOR="#FFCC99" SDVAL="50" SDNUM="3081;"><B><FONT SIZE=3>50</FONT></B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE BGCOLOR="#FFCC99"><B><FONT SIZE=3>modify exting coloumns </FONT></B></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>alter table std_master.maint modify coremark VARCHAR (500);</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE BGCOLOR="#FFCC99" SDVAL="51" SDNUM="3081;"><B><FONT SIZE=3>51</FONT></B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE BGCOLOR="#FFCC99"><B><FONT SIZE=3>Show tables from database</FONT></B></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>show tables from dhstore;</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE BGCOLOR="#FFCC99" SDVAL="52" SDNUM="3081;"><B><FONT SIZE=3>52</FONT></B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE BGCOLOR="#FFCC99"><B><FONT SIZE=3>alter add column after another table</FONT></B></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>alter table std_master.attend add column st_adm VARCHAR(10) after st_name;</FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE BGCOLOR="#FFCC99" SDVAL="53" SDNUM="3081;"><B><FONT SIZE=3>53</FONT></B></TD>
+			<TD STYLE="border-top: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE BGCOLOR="#FFCC99"><B><FONT SIZE=3>Add the new column with primary key</FONT></B></TD>
+		</TR>
+		<TR>
+			<TD STYLE="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT=36 ALIGN=CENTER VALIGN=MIDDLE><FONT SIZE=3><BR></FONT></TD>
+			<TD STYLE="border-bottom: 1px solid #000000; border-right: 1px solid #000000" ALIGN=LEFT VALIGN=MIDDLE><FONT SIZE=3>ALTER TABLE std_master.name add column id INT NOT NULL AUTO_INCREMENT FIRST, ADD primary KEY id(id)</FONT></TD>
+		</TR>
+	</TBODY>
+</TABLE>
+<!-- ************************************************************************** -->
+</BODY>
+
+</HTML>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0"
+     xmlns:media="http://search.yahoo.com/mrss/"
+     xmlns:jalbum="http://jalbum.net/jalbumrss">
+    <channel>
+        <title>Krishnamurti Study Centre Sahyadri</title>
+   	<link>.</link>
+        <generator>jAlbum 12</generator>
+   		<description>Photo Gallery</description>
+        <jalbum:absolutePath></jalbum:absolutePath>
+        <item>
+            <title>062</title>
+            <link>slides/062.html</link>
+            <pubDate>Fri, 18 Jul 2014 23:16:53 +0530</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/062.jpg" width="174" height="174"/>
+            <media:content type="image/jpeg" url="slides/062.jpg" width="640" height="480"/>
+            <jalbum:exif originalDate="7/2/06 10:32 AM" cameraMake="SONY" cameraModel="DSC-H1"/>
+            <guid isPermaLink="false">slides/062.jpg</guid>
+        </item>
+        <item>
+            <title>098</title>
+            <link>slides/098.html</link>
+            <pubDate>Fri, 18 Jul 2014 23:16:53 +0530</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/098.JPG" width="174" height="174"/>
+            <media:content type="image/jpeg" url="slides/098.JPG" width="640" height="480"/>
+            <jalbum:exif originalDate="4/26/12 6:27 AM" cameraMake="NIKON" cameraModel="COOLPIX P500   "/>
+            <guid isPermaLink="false">slides/098.JPG</guid>
+        </item>
+        <item>
+            <title>233</title>
+            <link>slides/233.html</link>
+            <pubDate>Fri, 18 Jul 2014 23:16:53 +0530</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/233.JPG" width="174" height="174"/>
+            <media:content type="image/jpeg" url="slides/233.JPG" width="640" height="480"/>
+            <jalbum:exif originalDate="7/11/10 7:50 AM" cameraMake="SONY" cameraModel="DSC-H2"/>
+            <guid isPermaLink="false">slides/233.JPG</guid>
+        </item>
+        <item>
+            <title>54</title>
+            <link>slides/54.html</link>
+            <pubDate>Fri, 18 Jul 2014 23:16:53 +0530</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/54.JPG" width="174" height="174"/>
+            <media:content type="image/jpeg" url="slides/54.JPG" width="640" height="480"/>
+            <jalbum:exif originalDate="7/30/10 2:55 PM" cameraMake="SONY" cameraModel="DSC-H2"/>
+            <guid isPermaLink="false">slides/54.JPG</guid>
+        </item>
+        <item>
+            <title>432</title>
+            <link>slides/432.html</link>
+            <pubDate>Fri, 18 Jul 2014 23:16:53 +0530</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/432.JPG" width="174" height="174"/>
+            <media:content type="image/jpeg" url="slides/432.JPG" width="640" height="480"/>
+            <jalbum:exif originalDate="5/28/10 6:21 PM" cameraMake="SONY" cameraModel="DSC-H2"/>
+            <guid isPermaLink="false">slides/432.JPG</guid>
+        </item>
+        <item>
+            <title>112</title>
+            <link>slides/112.html</link>
+            <pubDate>Fri, 18 Jul 2014 23:16:53 +0530</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/112.JPG" width="174" height="174"/>
+            <media:content type="image/jpeg" url="slides/112.JPG" width="640" height="480"/>
+            <jalbum:exif originalDate="6/25/10 3:46 PM" cameraMake="SONY" cameraModel="DSC-H2"/>
+            <guid isPermaLink="false">slides/112.JPG</guid>
+        </item>
+        <item>
+            <title>136</title>
+            <link>slides/136.html</link>
+            <pubDate>Fri, 18 Jul 2014 23:16:53 +0530</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/136.jpg" width="174" height="174"/>
+            <media:content type="image/jpeg" url="slides/136.jpg" width="640" height="360"/>
+            <guid isPermaLink="false">slides/136.jpg</guid>
+        </item>
+        <item>
+            <title>145</title>
+            <link>slides/145.html</link>
+            <pubDate>Fri, 18 Jul 2014 23:16:53 +0530</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/145.jpg" width="174" height="174"/>
+            <media:content type="image/jpeg" url="slides/145.jpg" width="640" height="360"/>
+            <guid isPermaLink="false">slides/145.jpg</guid>
+        </item>
+        <item>
+            <title>125</title>
+            <link>slides/125.html</link>
+            <pubDate>Fri, 18 Jul 2014 23:16:53 +0530</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/125.jpg" width="174" height="174"/>
+            <media:content type="image/jpeg" url="slides/125.jpg" width="640" height="363"/>
+            <guid isPermaLink="false">slides/125.jpg</guid>
+        </item>
+        <item>
+            <title>123</title>
+            <link>slides/123.html</link>
+            <pubDate>Fri, 18 Jul 2014 23:16:53 +0530</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/123.jpg" width="174" height="174"/>
+            <media:content type="image/jpeg" url="slides/123.jpg" width="640" height="363"/>
+            <guid isPermaLink="false">slides/123.jpg</guid>
+        </item>
+        <item>
+            <title>128</title>
+            <link>slides/128.html</link>
+            <pubDate>Fri, 18 Jul 2014 23:16:53 +0530</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/128.jpg" width="174" height="174"/>
+            <media:content type="image/jpeg" url="slides/128.jpg" width="640" height="363"/>
+            <guid isPermaLink="false">slides/128.jpg</guid>
+        </item>
+        <item>
+            <title>Picasa</title>
+            <link>slides/234.html</link>
+            <pubDate>Fri, 18 Jul 2014 23:16:53 +0530</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/234.JPG" width="174" height="174"/>
+            <media:content type="image/jpeg" url="slides/234.JPG" width="640" height="480"/>
+            <guid isPermaLink="false">slides/234.JPG</guid>
+        </item>
+        <item>
+            <title>Picasa</title>
+            <link>slides/345.html</link>
+            <pubDate>Fri, 18 Jul 2014 23:16:53 +0530</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/345.JPG" width="174" height="174"/>
+            <media:content type="image/jpeg" url="slides/345.JPG" width="640" height="480"/>
+            <guid isPermaLink="false">slides/345.JPG</guid>
+        </item>
+        <item>
+            <title>Picasa</title>
+            <link>slides/231.html</link>
+            <pubDate>Fri, 18 Jul 2014 23:16:53 +0530</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/231.JPG" width="174" height="174"/>
+            <media:content type="image/jpeg" url="slides/231.JPG" width="640" height="480"/>
+            <guid isPermaLink="false">slides/231.JPG</guid>
+        </item>
+        <item>
+            <title>113</title>
+            <link>slides/113.html</link>
+            <pubDate>Fri, 18 Jul 2014 23:16:53 +0530</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/113.JPG" width="174" height="174"/>
+            <media:content type="image/jpeg" url="slides/113.JPG" width="640" height="480"/>
+            <guid isPermaLink="false">slides/113.JPG</guid>
+        </item>
+        <item>
+            <title>207</title>
+            <link>slides/207.html</link>
+            <pubDate>Fri, 18 Jul 2014 23:16:53 +0530</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/207.JPG" width="174" height="174"/>
+            <media:content type="image/jpeg" url="slides/207.JPG" width="640" height="480"/>
+            <guid isPermaLink="false">slides/207.JPG</guid>
+        </item>
+        <item>
+            <title>124</title>
+            <link>slides/124.html</link>
+            <pubDate>Fri, 18 Jul 2014 23:16:53 +0530</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/124.jpg" width="174" height="174"/>
+            <media:content type="image/jpeg" url="slides/124.jpg" width="640" height="468"/>
+            <guid isPermaLink="false">slides/124.jpg</guid>
+        </item>
+        <item>
+            <title>127</title>
+            <link>slides/127.html</link>
+            <pubDate>Fri, 18 Jul 2014 23:16:53 +0530</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/127.jpg" width="174" height="174"/>
+            <media:content type="image/jpeg" url="slides/127.jpg" width="640" height="468"/>
+            <guid isPermaLink="false">slides/127.jpg</guid>
+        </item>
+    </channel>
+</rss>

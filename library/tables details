@@ -1,0 +1,75 @@
+
+=========================================================================================================
+                                     books table column details
+=========================================================================================================
+
+mysql> show columns from library.books;
++-----------------+--------------+------+-----+---------+----------------+
+| Field           | Type         | Null | Key | Default | Extra          |
++-----------------+--------------+------+-----+---------+----------------+
+| id              | int(255)     | NO   | PRI | NULL    | auto_increment |
+| date            | date         | NO   |     | NULL    |                |
+| author          | varchar(255) | NO   |     | NULL    |                |
+| title           | varchar(255) | NO   |     | NULL    |                |
+| edition         | varchar(255) | NO   |     | NULL    |                |
+| place_publisher | varchar(255) | NO   |     | NULL    |                |
+| status          | varchar(255) | NO   |     | NULL    |                |
+| class_no        | varchar(255) | NO   |     | NULL    |                |
+| year            | varchar(255) | NO   |     | NULL    |                |
+| pages           | varchar(255) | NO   |     | NULL    |                |
+| volume          | varchar(255) | NO   |     | NULL    |                |
+| source          | varchar(255) | NO   |     | NULL    |                |
+| isbn_no         | varchar(255) | NO   |     | NULL    |                |
+| bill_no         | varchar(255) | NO   |     | NULL    |                |
+| cost            | varchar(255) | NO   |     | NULL    |                |
+| keywords        | varchar(255) | NO   |     | NULL    |                |
+| remarks         | varchar(255) | NO   |     | NULL    |                |
+| staff_name      | varchar(200) | YES  |     | NULL    |                |
+| issue_date      | date         | YES  |     | NULL    |                |
++-----------------+--------------+------+-----+---------+----------------+
+19 rows in set (0.00 sec)
+
+
+=========================================================================================================
+                                    books_issue table column details
+=========================================================================================================
+
+mysql> show columns from library.books_issue;
++-------------+--------------+------+-----+---------+----------------+
+| Field       | Type         | Null | Key | Default | Extra          |
++-------------+--------------+------+-----+---------+----------------+
+| id          | int(20)      | NO   | PRI | NULL    | auto_increment |
+| issue_date  | date         | NO   |     | NULL    |                |
+| issue_time  | time         | YES  |     | NULL    |                |
+| book_id     | int(50)      | NO   |     | NULL    |                |
+| book_name   | varchar(255) | NO   |     | NULL    |                |
+| book_author | varchar(255) | NO   |     | NULL    |                |
+| staff_name  | varchar(200) | NO   |     | NULL    |                |
+| return_date | date         | YES  |     | NULL    |                |
+| status      | varchar(30)  | YES  |     | NULL    |                |
++-------------+--------------+------+-----+---------+----------------+
+9 rows in set (0.00 sec)
+
+
+=========================================================================================================
+                                    books_request table column details
+=========================================================================================================
+
+mysql> show columns from library.books_request;
++-----------+--------------+------+-----+---------+----------------+
+| Field     | Type         | Null | Key | Default | Extra          |
++-----------+--------------+------+-----+---------+----------------+
+| id        | int(255)     | NO   | PRI | NULL    | auto_increment |
+| req_date  | date         | NO   |     | NULL    |                |
+| author    | varchar(255) | NO   |     | NULL    |                |
+| title     | varchar(255) | NO   |     | NULL    |                |
+| edition   | varchar(255) | NO   |     | NULL    |                |
+| remarks   | varchar(255) | NO   |     | NULL    |                |
+| user_type | varchar(30)  | YES  |     | NULL    |                |
+| user_name | varchar(200) | YES  |     | NULL    |                |
+| req_time  | time         | YES  |     | NULL    |                |
++-----------+--------------+------+-----+---------+----------------+
+9 rows in set (0.00 sec)
+
+
+

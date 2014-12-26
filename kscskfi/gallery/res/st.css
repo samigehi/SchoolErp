@@ -1,0 +1,49 @@
+div.pcp {
+text-align:center;
+border:0;
+background-color:#9C9E8D;
+color:#000000;
+padding:5px;
+margin:5px;
+font-family: Tahoma, sans-serif;
+font-weight: normal;
+font-size: 14px;
+text-decoration: none;
+}
+
+a.pht {
+float:left;
+width:250px;
+height:206px;
+text-align:center;
+border: 1px solid #9C9E8D;
+background-color: #9C9E8D;
+color: #000000;
+padding:5px;
+margin:5px;
+font-family: Tahoma, sans-serif;
+font-weight: normal;
+font-size: 10px;
+text-decoration: none;
+}
+
+a.pht:hover {
+border: 1px solid #C1C1BC;
+text-decoration: underline;
+}
+
+a.palbum {
+border: 1px solid #BDBDB8;
+background-color:#ACADA6;
+padding:5px;
+font-family:Tahoma,sans-serif;
+font-weight:normal;
+font-size:10px;
+text-decoration:none;
+color:#FFFFFF;
+}
+
+a.palbum:hover {
+text-decoration:underline;
+}
+

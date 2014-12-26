@@ -1,0 +1,34 @@
+ul {
+  font-family: Arial, Verdana;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ul li {
+  display: block;
+  position: relative;
+  float: left;
+}
+li ul { display: none; }
+ul li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  border-top: 1px solid #ffffff;
+  padding: 8px 15px 8px 15px;
+  background: #7A8945;
+  margin-left: 1px;
+  white-space: nowrap;
+}
+ul li a:hover { background: #5A633C; }
+li:hover ul {
+  display: block;
+  position: absolute;
+}
+li:hover li {
+  float: none;
+  font-size: 13px;
+}
+li:hover a { background: #5A633C; }
+li:hover li a:hover { background: #7A8945; }

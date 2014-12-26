@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+#index #main {
+	margin: 40px auto;	
+}
+
+#index ul.thumbnails {
+	list-style: none;
+	margin: 0;
+	width: 100%;
+}
+
+#index ul.thumbnails li {
+	margin: 0;
+	float: left;
+	position: relative;
+}
+
+#index ul.thumbnails li img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	-ms-interpolation-mode: bicubic;	
+	border-radius: 4px;	
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+}
+
+#index ul.thumbnails li img.hover {
+	border: none;
+}
+
+#index ul.folders {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+}
+
+
+#index ul.folders li {
+	width: 100%;
+	padding: 0;
+	margin: 0 0 20px 0;
+}
+
+#index ul.folders li a {
+	position: relative;
+	border-radius: 4px;	
+	-webkit-border-radius:4px;
+	-moz-border-radius: 4px;
+	display: block;
+	width: 100%;	
+	padding: 10px;
+}
+
+* html #index ul.folders li a {
+	height: 1px;
+}
+
+#index ul.folders li img,
+#index ul.folders li .folder_info {
+	display: inline;
+	float: left;
+}
+
+#index ul.folders li img {
+	border-style: solid;
+}
+
+#index ul.folders li .folder_info h2,
+#index ul.folders li .folder_info p {
+	cursor: pointer;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}

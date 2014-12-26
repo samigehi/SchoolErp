@@ -1,0 +1,248 @@
+
+.body_new {margin-left:auto; margin-right:auto; padding:0; width:99%; color:black; font:normal 12px/1.5em "Liberation sans", Verdana, Helvetica, sans-serif; border-color:red; background:#D3E9FA;}
+
+body {margin-left:1em; margin-right:1em; padding:0; width:99%; color:black; font:normal 12px/1.5em "Liberation sans", Verdana, Helvetica, sans-serif; background:white; border-color: red;}
+
+
+h1 { margin-top:0px; color:darkblue; padding:0px 0 0px; font:bold 22px 'Lucida Console', Monaco, monospace; letter-spacing:-0.1px; text-align:center;}
+h1 small { display:block; font:normal 13px/1.6em "Liberation sans", Arial, Helvetica, sans-serif; letter-spacing:normal;color:#736F6E; text-transform:none;}
+h2 { margin-top:10px; color:white; padding:1px 0 1px; background-color:	#6D7B8D; font:bold 17px/1.8em "Liberation sans", Arial, Verdana, Helvetica, sans-serif; letter-spacing:0px; text-align:center;}
+
+h3 { margin-top:10px; color:yellow; padding:2px 0 2px; font:bold 13px/1.6em "Liberation sans", Arial, Verdana, Helvetica, sans-serif; background-color:#005CB9; text-align:center;}
+
+
+h3.delmesg { margin-top:10px; color:white; width:40%; padding:2px 0 2px; font:bold 14px/1.6em "Liberation sans", Arial, Verdana, Helvetica, sans-serif; background-color:#98BF21; text-align:center;}
+
+a { color:darkblue; padding:0 0 8px 0; font:normal 11px/1.7em "Liberation sans", verdana, helvetica, arial, sans-serif; text-decoration:underline;}
+
+a:hover { color:red; text-decoration:underline;}
+
+p { margin:8px 0; padding:0 0 8px 0; font:normal 13px/1.7em "Liberation sans", Arial, Helvetica, sans-serif;}
+p.infopost { margin-bottom:12px; padding:6px 12px; background-color:#fff; color:#6d6d6d; border:1px solid #c9c9c9;}
+
+p.new { margin:4px; color:yellow; padding:4px 0 2px 0; font:bold 14px/1.7em "Liberation sans", Arial, Helvetica, sans-serif; text-align:center; background-color:#6D7B8D;}
+
+.content_resize { margin:0 auto; padding:15px 0; width:960px;}
+
+
+.table1 {font:normal 12px/1.4em "Liberation sans",Arial,Verdana,Helvetica,sans-serif; width:100%; color:#424242; border-width:1px; border-color:#999999; border-collapse: collapse;} 
+
+.table_new {font-family:verdana,arial,sans-serif; float:right; font-size:11.2px; width:80%; color:#333333; border-width:1px; border-color:#FDF5E6; border-collapse: collapse;} 
+
+.td1 {border-width:1px; padding:6px; border-style:solid; border-color:#609099; background-color:#F8E6E0;}
+
+.th1{border-width:1px; padding:6px; border-style:solid; border-color:#909090; background-color:#F7BE81;} 
+
+
+input{font-size:11.3px;}
+
+.input1{border: 0; font-size:11.3px; padding: 0; spacing: 0; margin: 0; background-color:#FDF5E6;}
+
+.img1 {
+width: 50px;
+height: 60px;
+padding:1px; 
+border:2px gray solid;
+}
+
+.tbody 
+{
+  width:100%;
+  padding:5px;
+  overflow: auto; 
+  height:73%;
+  border: 1px solid gray;
+  }
+
+.contentA{
+font-weight: normal;
+margin-left:0px; 
+margin-right:0%;
+padding:10px;
+}
+
+.contentB{
+font-weight: normal;
+margin-left:0px; 
+margin-left:0%;
+padding:10px;
+}
+
+.mainleft{
+float:left; 
+width:49%; 
+background-color:#FDF5E6; 
+border:1px solid #98AFC7;
+height:600px;
+}
+
+.mainright{
+float:right; 
+width:49%; 
+background-color:#FDF5E6; 
+border:1px solid #98AFC7;
+height:540px;
+}
+
+.logintext{
+width:20%;
+height:20%;
+float:right;
+}
+
+.addform{
+width:55%; 
+margin: auto auto auto auto;
+background-color:#FDF5E6; 
+border:1px solid #98AFC7;
+}
+
+.updateform{
+width:75%;
+margin:auto auto auto auto;
+background-color:#FDF5E6; 
+border:1px solid #98AFC7;
+}
+
+.contime{
+width:20px;
+float:left;
+padding:8px;
+min-height:24px;
+}
+
+ .left{
+width:120px;
+float:left;
+padding:11px 0px 0px 7px;
+min-height:24px;
+}
+
+ .left_new{
+float:left;
+padding:11px 0px 0px 7px;
+min-height:24px;
+}
+
+.right{
+width:210px;
+float:left;
+padding:8px;
+min-height:24px;
+}
+
+.right_new{
+float:left;
+padding:8px;
+min-height:24px;
+}
+
+.clear{
+float:none;
+clear:both;
+height:0px;
+}
+
+.row{
+background-color:none;
+display:block;
+min-height:50px;
+ }
+
+ .textarea{
+ width:280px;
+font-size: 12px;
+ }
+
+ .text{
+ width:250px;
+font-size: 11.2px;
+height:22;
+ }
+
+.text1{
+font-size: 11.2px;
+height:22;
+ }
+
+ .over{
+ background-color:#e6e2af;
+ }
+
+ .out{
+ background-color:none;
+ }
+
+.nw{
+color:orange;
+height:6px;
+background-color: orange;
+}
+
+.ow{
+color:orange;
+height:6px;
+background-color: orange;
+}
+
+.message1{
+color:white;
+text-align:center;
+padding:4px;
+font-size: 13px;
+background-color:#6D7B8D;
+font-weight: bold;
+margin-top:0px;
+}
+
+.message{
+color:#3333FF;
+text-align:center;
+font-size: 12px;
+font-weight: bold;
+}
+
+
+.maintab{
+float:left;
+}
+
+
+.logout{
+width:100px;
+float:right;
+}
+
+select{
+padding:1px;
+color:black;
+list-style-type: none;
+font: normal 12px Verdana;
+background-color:#D4EDF7; 
+}
+
+/******* option ********/
+optgroup.red {background-color:orange; font-weight: bold; font-size: 13px; color: black;}
+option.pink {background-color:#D4EDF7; font-size: 11.5px; color: black;}
+/******* option ********/
+
+.jMenu{display:table;margin:0;padding:0;list-style:none; width:100%;}
+.jMenu li{display:table-cell;background-color:#322f32;margin:0;list-style:none}
+.jMenu li a{padding:10px 15px;display:block;background-color:transparent;color:#fff;text-transform:uppercase;cursor:pointer;font-size:12px; text-decoration:none;}
+.jMenu li a:hover{background-color:#3a3a3a}
+.jMenu li:hover>a{background-color:#3a3a3a}
+.jMenu li ul{display:none;position:absolute;z-index:9999;padding:0;margin:0;list-style:none}.jMenu li ul li{background-color:#322f32;display:block;border-bottom:1px solid #484548;padding:0;list-style:none;position:relative}
+.jMenu li ul li a{font-size:11px;text-transform:none;display:block;padding:7px;border-top:1px solid transparent;border-bottom:1px solid transparent}
+.jMenu li ul li a.isParent{background-color:#3a3a3a}
+.jMenu li ul li a:hover{background-color:#514c52;border-top:1px solid #322f32;border-bottom:1px solid #322f32}
+
+#header {
+display: block;
+top: 0px;
+left: 0px;
+width: 100%;
+height: 112px;
+background-color:#99CC66;;
+border: 1px solid #888;
+}
+

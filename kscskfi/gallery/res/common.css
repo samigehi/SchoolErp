@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+body {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-size: 14px;	
+	font-family: "helvetica neue",sans-serif
+}
+
+h1 {
+	font-size: 1.2em;
+	margin: 10px 0;
+}
+
+h2 {
+	font-size: 1.1em;
+	margin: 20px 0;	
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+}
+
+a img {
+	border: none;	
+}
+
+.description {
+	margin: 10px 0;
+}
+
+#bottom_container {
+	margin: 30px 0;
+	padding-top: 6px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	width: 100%;
+	text-algin: center;
+	display: block;
+	font-size: 0.8em;
+}
+
+.clear {
+	clear: both;	
+}

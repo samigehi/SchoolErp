@@ -1,0 +1,48 @@
+mysql> show columns from std_master.name;
++--------------+--------------+------+-----+---------+----------------+
+| Field        | Type         | Null | Key | Default | Extra          |
++--------------+--------------+------+-----+---------+----------------+
+| id           | int(11)      | NO   | PRI | NULL    | auto_increment |
+| adm          | int(20)      | NO   |     | NULL    |                |
+| name         | varchar(255) | NO   |     |         |                |
+| name_adm     | varchar(255) | YES  |     | NULL    |                |
+| birth_date   | date         | NO   |     | NULL    |                |
+| adm_date     | date         | NO   |     | NULL    |                |
+| sex          | varchar(20)  | NO   |     |         |                |
+| class        | varchar(20)  | NO   |     |         |                |
+| bldgroup     | varchar(20)  | NO   |     |         |                |
+| class_teach  | varchar(50)  | NO   |     |         |                |
+| house        | varchar(50)  | NO   |     |         |                |
+| house_parent | varchar(50)  | NO   |     |         |                |
+| hobby_1      | varchar(50)  | NO   |     | NULL    |                |
+| hobby_2      | varchar(50)  | NO   |     | NULL    |                |
+| hobby_3      | varchar(50)  | NO   |     | NULL    |                |
+| six_sub      | varchar(50)  | NO   |     |         |                |
+| second_lang  | varchar(50)  | NO   |     |         |                |
+| parent1      | varchar(150) | NO   |     |         |                |
+| parent2      | varchar(150) | NO   |     |         |                |
+| occupation   | varchar(255) | NO   |     |         |                |
+| occupation_2 | varchar(255) | NO   |     |         |                |
+| address1     | varchar(255) | NO   |     |         |                |
+| address2     | varchar(255) | NO   |     |         |                |
+| address3     | varchar(255) | NO   |     |         |                |
+| city         | varchar(50)  | NO   |     |         |                |
+| postalcode   | varchar(20)  | NO   |     |         |                |
+| state        | varchar(50)  | NO   |     |         |                |
+| country      | varchar(50)  | NO   |     |         |                |
+| phone        | varchar(255) | NO   |     |         |                |
+| mobile_no    | varchar(255) | NO   |     |         |                |
+| mobile_no_2  | varchar(255) | NO   |     |         |                |
+| email        | varchar(255) | NO   |     |         |                |
+| email_2      | varchar(255) | NO   |     |         |                |
+| add_date     | date         | NO   |     | NULL    |                |
+| add_time     | time         | YES  |     | NULL    |                |
+| add_user     | varchar(100) | NO   |     |         |                |
+| updated_by   | varchar(100) | NO   |     |         |                |
+| update_date  | date         | NO   |     | NULL    |                |
+| idphoto      | mediumblob   | YES  |     | NULL    |                |
++--------------+--------------+------+-----+---------+----------------+
+39 rows in set (0.00 sec)
+
+mysql> 
+
