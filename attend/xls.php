@@ -11,8 +11,8 @@ header("Content-Disposition: attachment; filename=attend_report_'$fromdate'_'$to
 header("Pragma: no-cache");
 header("Expires: 0");
 
-mysql_connect('localhost','root','root');
-@mysql_select_db(std_master) or die("Unable to select database");
+mysql_connect('localhost','thevall7_erp','thevalleyschool123');
+@mysql_select_db(thevally_erp_std_master) or die("Unable to select database");
 
 $select = "SELECT * FROM attend WHERE attend_area = '$attend_area' AND school_date BETWEEN '$fromdate' AND '$todate'";
 

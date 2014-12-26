@@ -12,8 +12,8 @@ header("Pragma: no-cache");
 header("Expires: 0");
 
 
-mysql_connect('localhost','root','root');
-@mysql_select_db(ss_maint) or die("Unable to select database");
+mysql_connect('localhost','thevall7_erp',Õthevalleyschool123Õ);
+@mysql_select_db(thevall7_erp_ss_maint) or die("Unable to select database");
 
 $select = "SELECT id, compldate, compltime, name, location, department, compldetails, description, currentpro FROM maint WHERE department LIKE '%$department%' AND compldate BETWEEN '$fromdate' AND '$todate'";
 

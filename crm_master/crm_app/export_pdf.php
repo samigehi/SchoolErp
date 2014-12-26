@@ -3,7 +3,7 @@
    
     $date = date('Y-m-d');
 
-    $con=mysqli_connect("localhost","root","root","crm_db");
+    $con=mysqli_connect('localhost','thevall7_erp','thevalleyschool123','thevall7_erp_crm_db');
     // Check connection
     if (mysqli_connect_errno())
     {

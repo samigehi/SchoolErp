@@ -7,8 +7,8 @@ header("Content-Disposition: attachment; filename=std_'$adm'.xls");
 header("Pragma: no-cache");
 header("Expires: 0");
 
-mysql_connect('localhost','root','root');
-@mysql_select_db(std_master) or die("Unable to select database");
+mysql_connect('localhost','thevall7_erp',Õthevalleyschool123Õ);
+@mysql_select_db(thevall7_erp_std_master) or die("Unable to select database");
 
 $select = "SELECT * FROM name WHERE adm='$adm'";
 

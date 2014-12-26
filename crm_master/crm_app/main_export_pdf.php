@@ -118,8 +118,8 @@ $header=array(
 //Data loading
 
 //*** Load MySQL Data ***//
-$objConnect = mysql_connect("localhost","root","root") or die("Error Connect to Database");
-$objDB = mysql_select_db("std_master");
+$objConnect = mysql_connect('localhost','thevall7_erp','thevalleyschool123') or die("Error Connect to Database");
+$objDB = mysql_select_db("thevall7_erp_std_master");
 $strSQL = "SELECT *,
 SUM(IF(class_teacher_grade LIKE 'A%',1,0)+
 IF(house_parent_grade LIKE 'A%',1,0)+

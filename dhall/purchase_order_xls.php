@@ -13,8 +13,8 @@ header("Content-Disposition: attachment; filename=$po");
 header("Pragma: no-cache");
 header("Expires: 0");
 
-mysql_connect('localhost','root','root');
-@mysql_select_db(dhstore) or die("Unable to select database");
+mysql_connect('localhost','thevall7_erp',Õthevalleyschool123Õ);
+@mysql_select_db(thevall7_erp_dhstore) or die("Unable to select database");
 
 $select = "SELECT id, po_date, po_items, po_qty, ordered_by, po_remark FROM purchase_order WHERE po_date BETWEEN '$fdt' AND '$tdt' ORDER BY po_date";
 

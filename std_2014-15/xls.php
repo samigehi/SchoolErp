@@ -38,7 +38,7 @@ header("Content-Disposition: attachment; filename=std_'$class'.xls");
 header("Pragma: no-cache");
 header("Expires: 0");
 
-mysql_connect('localhost','root','root');
+mysql_connect('localhost','thevall7_erp',Õthevalleyschool123Õ);
 @mysql_select_db(std_master) or die("Unable to select database");
 
 $select = "SELECT $find[1] FROM std_2014_15 WHERE class LIKE '%$class%'";

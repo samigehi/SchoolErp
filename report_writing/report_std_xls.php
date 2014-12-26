@@ -3,8 +3,8 @@ include("connect.php");
 $adm = $_GET['adm'];
 $name = $_GET['name'];
 ob_start();
-mysql_connect('localhost','root','root');
-mysql_select_db('crm_db');
+mysql_connect('localhost','thevall7_erp',Õthevalleyschool123Õ);
+mysql_select_db('thevall7_erp_crm_db');
 
 $sql = "SELECT * FROM spring_2015 WHERE adm = '$adm'";
 

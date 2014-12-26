@@ -8,10 +8,10 @@ include("graph/phpgraphlib.php");
 
 $graph=new PHPGraphLib(850,500); 
 
-$link = mysql_connect('localhost', 'root', 'root')
+$link = mysql_connect('localhost','thevall7_erp',Õthevalleyschool123Õ)
    or die('Could not connect: ' . mysql_error());
      
-mysql_select_db('ss_maint') or die('Could not select database');
+mysql_select_db('thevall7_erp_ss_maint') or die('Could not select database');
   
 $dataArray=array();
   

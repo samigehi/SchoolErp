@@ -8,8 +8,8 @@ header("Content-Disposition: attachment; filename=PO_$todate.xls");
 header("Pragma: no-cache");
 header("Expires: 0");
 
-mysql_connect('localhost','root','root');
-@mysql_select_db(tkshop) or die("Unable to select database");
+mysql_connect('localhost','thevall7_erp',Õthevalleyschool123Õ);
+@mysql_select_db(thevall7_erp_tkshop) or die("Unable to select database");
 
 $select = "SELECT po_id, po_date, po_items, po_remark, ordered_by, po_qty, unit FROM tk_purchase_order WHERE po_date BETWEEN '$fromdate' AND '$todate' ORDER BY po_date";
 

@@ -17,8 +17,8 @@
     <?  
     if($_GET["txtKeyword"] != "")  
     {  
-    $objConnect = mysql_connect("localhost","root","root") or die(mysql_error());  
-    $objDB = mysql_select_db("library");  
+    $objConnect = mysql_connect('localhost','thevall7_erp',Õthevalleyschool123Õ) or die(mysql_error());  
+    $objDB = mysql_select_db("thevall7_erp_library");  
     // Search By Name or Email  
     $strSQL = "SELECT * FROM books WHERE (title LIKE '%".$_GET["txtKeyword"]."%' or author LIKE '%".$_GET["txtKeyword"]."%')";  
     $objQuery = mysql_query($strSQL) or die ("Error Query [".$strSQL."]");  

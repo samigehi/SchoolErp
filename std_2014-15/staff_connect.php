@@ -1,7 +1,7 @@
 <?php
 $hostname='localhost'; //// specify host, i.e. 'localhost'
-$user='root'; //// specify username
-$pass='root'; //// specify password
+$user='thevall7_erp'; //// specify username
+$pass='thevalleyschool123'; //// specify password
 $dbase='ss_staff'; //// specify database name
 $connection = mysql_connect("$hostname" , "$user" , "$pass") 
 or die ("Can't connect to MySQL");

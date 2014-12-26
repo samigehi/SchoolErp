@@ -5,8 +5,8 @@ header("Content-Disposition: attachment; filename=library_books.xls");
 header("Pragma: no-cache");
 header("Expires: 0");
 
-mysql_connect('localhost','root','root');
-@mysql_select_db(library) or die("Unable to select database");
+mysql_connect('localhost','thevall7_erp',Õthevalleyschool123Õ);
+@mysql_select_db(thevall7_erp_library) or die("Unable to select database");
 
 $select = "SELECT * FROM books ORDER BY title";
 

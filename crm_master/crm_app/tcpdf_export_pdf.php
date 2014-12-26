@@ -35,7 +35,7 @@ ob_clean();
     // Set some content to print
     $date = date('Y-m-d');
 
-    $con=mysqli_connect("localhost","root","root","std_master");
+    $con=mysqli_connect('localhost','thevall7_erp','thevalleyschool123','thevall7_erp_std_master');
     // Check connection
     if (mysqli_connect_errno())
     {

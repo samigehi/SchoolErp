@@ -7,8 +7,8 @@ header("Content-Disposition: attachment; filename=stock_'$today'.xls");
 header("Pragma: no-cache");
 header("Expires: 0");
 
-mysql_connect('localhost','root','root');
-@mysql_select_db(dhstore) or die("Unable to select database");
+mysql_connect('localhost','thevall7_erp',Õthevalleyschool123Õ);
+@mysql_select_db(thevall7_erp_dhstore) or die("Unable to select database");
 
 $select = "SELECT st_items, rate, st_qty, unit, st_remark FROM stock ORDER BY st_items";
 

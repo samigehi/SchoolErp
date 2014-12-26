@@ -8,8 +8,8 @@ header("Content-Disposition: attachment; filename=staff_$staff_name.xls");
 header("Pragma: no-cache");
 header("Expires: 0");
 
-mysql_connect('localhost','root','root');
-@mysql_select_db(ss_staff) or die("Unable to select database");
+mysql_connect('localhost','thevall7_erp',Õthevalleyschool123Õ);
+@mysql_select_db(thevall7_erp_ss_staff) or die("Unable to select database");
 
 $select = "SELECT * FROM staff WHERE id='$id'";
 

@@ -24,9 +24,9 @@ Note: If you use cpanel, the name will be like account_database
 *************************************************************/
 
 define ("DB_HOST", "localhost"); // set database host
-define ("DB_USER", "root"); // set database user
-define ("DB_PASS","root"); // set database password
-define ("DB_NAME","std_master"); // set database name
+define ("DB_USER", "thevall7_erp"); // set database user
+define ("DB_PASS","thevalleyschool123"); // set database password
+define ("DB_NAME","thevall7_erp_std_master"); // set database name
 
 $link = mysql_connect(DB_HOST, DB_USER, DB_PASS) or die("Couldn't make connection.");
 $db = mysql_select_db(DB_NAME, $link) or die("Couldn't select database");

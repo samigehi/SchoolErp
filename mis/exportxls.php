@@ -8,8 +8,8 @@ header("Content-Disposition: attachment; filename=elect_MIS_'$fromdate|$todate'.
 header("Pragma: no-cache");
 header("Expires: 0");
 
-mysql_connect('localhost','root','root');
-@mysql_select_db(ss_maint) or die("Unable to select database");
+mysql_connect('localhost','thevall7_erp',Õthevalleyschool123Õ);
+@mysql_select_db(thevall7_erp_ss_maint) or die("Unable to select database");
 
 $select = "SELECT * FROM ele_mis WHERE el_date BETWEEN '$fromdate' AND '$todate'";
 

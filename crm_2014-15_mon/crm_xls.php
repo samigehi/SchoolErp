@@ -2,8 +2,8 @@
 include("connect.php");
 $class = $_GET['class'];
 ob_start();
-mysql_connect('localhost','root','root');
-mysql_select_db('crm_db');
+mysql_connect('localhost','thevall7_erp','thevalleyschool123');
+mysql_select_db('thevall7_erp_crm_db');
 
 //*************************************** classes 4,5 & 6 ***************************************// 
 if ($class == '4' || $class == '5' || $class == '6A' || $class == '6B')

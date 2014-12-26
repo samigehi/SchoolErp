@@ -3,8 +3,8 @@
   require_once('Workbook.php');
 
   // koneksi ke mysql
-  mysql_connect('localhost', 'root', 'root');
-  mysql_select_db('crm_db');
+mysql_connect('localhost','thevall7_erp','thevalleyschool123');
+  mysql_select_db('thevall7_erp_crm_db');
 
   // function untuk membuat header file excel
   function HeaderingExcel($filename) {
